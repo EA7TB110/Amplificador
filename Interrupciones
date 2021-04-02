@@ -1,0 +1,7 @@
+Interrupciones.
+El arduino tiene dos interrupciones, en los pines digitales D2 y D3.
+Se va utilizar el modo FALLING (se dectecta la interrupcion cuando hay un paso del ALTO a Bajo)
+Para ello la entrada se definira como pinMode(intPin, INPUT_PULLUP)
+En setup:
+  attachInInterrupt(intPin, Paro, FALLING)
+Se creara una funcion llamada Paro.
